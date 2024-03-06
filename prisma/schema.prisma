@@ -20,3 +20,11 @@ model Ammo {
 	damage      Int
 	penetration Int
 }
+
+model Support {
+  id          Int @id@default(autoincrement())
+  name        String
+  type        Int
+  content     String
+  createdAt DateTime @default(now())
+}
