@@ -4,11 +4,11 @@ const page = async ({ params }: { params: { ammo: number } }) => {
 	console.log(params)
 	// fetch Data
 	const searchedAmmoList = await getAmmo(params.ammo)
-
+	
 	return (
 		<div className="w-full mt-4">
 			<p>{params.ammo}</p>
-			<ScatterUi data={searchedAmmoList}/>
+				<ScatterUi data={searchedAmmoList}/>
 		</div>
 	)
 }
