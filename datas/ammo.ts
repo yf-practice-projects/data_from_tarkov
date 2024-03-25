@@ -7,6 +7,9 @@ export const getAmmo = async(searchAmmo: number) => {
 	const data = await prisma.ammo.findMany({
 		where: {
 			type: Number(searchAmmo)
+		},
+		orderBy: {
+			damage:"desc"
 		}
 	})
 	return data;
