@@ -14,7 +14,7 @@ export default function Header() {
             Ammo
           </Link>
           <Link className="text-sm font-medium text-white hover:underline" href="/support">
-            問い合わせ
+            Support
           </Link>
           <Link className="text-sm font-medium text-white hover:underline" href="/about">
             Aboout
